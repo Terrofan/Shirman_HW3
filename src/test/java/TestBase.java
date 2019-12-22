@@ -22,9 +22,10 @@ public class TestBase {
         driver.quit();
     }
 
-    public void printTitle() {
+    public void printTitle() throws InterruptedException {
         String text = driver.getTitle();
         System.out.println(text);
+        Thread.sleep(2000);
     }
 
     public void click(By locator) throws InterruptedException {
